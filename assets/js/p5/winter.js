@@ -1,3 +1,6 @@
+var url = 'https://rawgit.com/cataliniimolnar/json_data/master/qts.json';
+var data;
+
 let snow = [];
 let gravity;
 
@@ -7,6 +10,7 @@ let spritesheet;
 let textures = [];
 
 function preload(){
+    data = loadJSON(url);
     spritesheet = loadImage('media/f32.png');
 }
 
