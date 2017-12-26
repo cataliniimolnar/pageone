@@ -134,9 +134,6 @@ button:hover {
 	font-family: 'Scope One', serif;
 	font-weight: 500;
 	}
-.intro_quote h1::first-letter {
-	margin-left: 2em;
-	}
 .intro_quote h3 {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
