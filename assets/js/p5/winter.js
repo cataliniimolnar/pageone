@@ -60,7 +60,6 @@ function setup(){
     } else {
         xr = floor(random(400, 550));
     }
-    console.log(windowWidth + " " + xr);
 
     for (let i = 0; i < xr; i++) {
         let x = random(width);
