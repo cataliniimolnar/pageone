@@ -3,7 +3,7 @@ var q_url = 'https://rawgit.com/cataliniimolnar/json_data/master/qts.json';
 var q_data;
 
 //movies
-var m_url = 'https://cdn.rawgit.com/cataliniimolnar/json_data/master/mdb.json';
+var m_url = 'https://rawgit.com/cataliniimolnar/json_data/master/mdb.json';
 var m_data;
 
 // snow
