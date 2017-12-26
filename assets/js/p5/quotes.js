@@ -8,7 +8,4 @@ function prepQuote() {
 	ar.child(na);
 	var x = (floor(random(39)));
 	ar.addClass('cl-' + x);
-
-	var m_btn = select('#home_btn');
-	m_btn.addClass('cl-' + x);
 }

@@ -57,12 +57,17 @@ main {
 	}
 
 button {
+	background: rgba(0, 0, 0, 0); 
 	border: none; 
 	padding: 0.4em; 
+	color: rgba(240, 240, 240, 1);
 	cursor: pointer;
 	}
 button:hover {
-	color: rgba(3, 129, 247, 0.527);
+	background: rgba(0, 0, 0, 0); 
+	border: none; 
+	padding: 0.4em; 
+	color: rgba(240, 240, 240, 0.5);
 	}
 
 
