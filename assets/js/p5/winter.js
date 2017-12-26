@@ -44,7 +44,7 @@ function setup(){
     
     //prepare quote
     prepQuote();
-    
+    prepMovies();
 }
 
 
