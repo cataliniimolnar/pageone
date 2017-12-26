@@ -1,7 +1,7 @@
 function prepMovies() {
-	//var mov = m_data.people;
+	var mov = m_data.movies;
 	
-	console.log(m_data);
+	console.log(mov);
 	
 	/*
 	var n = (floor(random(ppl.length)));
