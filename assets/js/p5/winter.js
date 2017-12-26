@@ -1,7 +1,7 @@
 let snow = [];
 let gravity;
-let zOff = 0;
 
+let zOff = 0;
 
 let spritesheet;
 let textures = [];
@@ -30,6 +30,7 @@ function setup(){
         snow.push(new SnowFlake(x, y, design));
     }
     
+    prepQuote();
     
 }
 

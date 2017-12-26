@@ -1,12 +1,8 @@
-var url = 'https://rawgit.com/cataliniimolnar/json_data/master/qts.json';
-var data;
-
-function preload(){
+function prepQuote() {
+	var url = 'https://rawgit.com/cataliniimolnar/json_data/master/qts.json';
+	var data;
 	data = loadJSON(url);
-}
 
-function setup() {
-	noCanvas();
 	var ppl = data.people;
 	var n = (floor(random(ppl.length)));
 	
