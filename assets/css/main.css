@@ -1,7 +1,16 @@
 *, *:before, *:after { box-sizing: border-box; margin: 0; padding: 0; }
-body {
+html, body {
 	min-width: 100vw;
 	min-height: 100vh;
+	background: rgba(34, 34, 34, 1); 
+	}
+
+main {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -9,4 +18,43 @@ body {
 	align-items: center;
 	}
 
+.intro,
+.movies {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	}
+.intro {
+	transform: translate3d(0, -100%, 0);
+	transition: transform 0.5s ease-in-out;
+	}
+.movies {
+	transform: translate3d(-100%, 0, 0);
+	transition: transform 0.5s ease-in-out;
+	background: rgba(65, 74, 76, 1);
+	}
+.show {
+	transform: translate3d(0, 0, 0);
+	transition: transform 0.5s ease-in-out;
+	}
 
+.intro button {
+	background: rgba(0, 0, 0, 0); 
+	border: none; 
+	padding: 0.4em; 
+	color: rgba(240, 240, 240, 1);
+	cursor: pointer;
+	}
+.intro button:hover {
+	background: rgba(0, 0, 0, 0); 
+	border: none; 
+	padding: 0.4em; 
+	color: rgba(240, 240, 240, 0.5);
+	}
