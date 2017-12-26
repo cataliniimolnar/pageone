@@ -110,6 +110,7 @@ button:hover {
 	}
 
 
+
 .movie {
 	position: relative;
 	width: 320px;
@@ -122,6 +123,8 @@ button:hover {
 	width: 100%;
 	height: auto;
 	}
+
+
 
 .intro_quote {
 	min-width: 400px;
@@ -264,19 +267,19 @@ button:hover {
 	color: rgba(35, 35, 35, 1);
 	}
 .cl-22 {
-	background: rgba(255,188,217, 1);
-	color: rgba(35, 35, 35, 1);
+	background: rgb(61, 25, 41);
+	color: rgb(253, 241, 241);
 	}
 .cl-23 {
-	background: rgba(252,180,213, 1);
-	color: rgba(35, 35, 35, 1);
+	background: rgb(71, 0, 32);
+	color: rgb(247, 236, 236);
 	}
 .cl-24 {
-	background: rgba(255,170,204, 1);
-	color: rgba(35, 35, 35, 1);
+	background: rgb(134, 50, 2);
+	color: rgb(255, 255, 255);
 	}
 .cl-25 {
-	background: rgba(255,164,116, 1);
+	background: rgb(252, 130, 64);
 	color: rgba(35, 35, 35, 1);
 	}
 .cl-26 {
@@ -308,31 +311,31 @@ button:hover {
 	color: rgba(237, 237, 237, 1);
 	}
 .cl-33 {
-	background: rgba(110,81,96, 1);
+	background: rgb(85, 48, 67);
 	color: rgba(237, 237, 237, 1);
 	}
 .cl-34 {
-	background: rgba(143,80,157, 1);
+	background: rgb(100, 48, 112);
 	color: rgba(237, 237, 237, 1);
 	}
 .cl-35 {
-	background: rgba(192,68,143, 1);
+	background: rgb(75, 31, 57);
 	color: rgba(237, 237, 237, 1);
 	}
 .cl-36 {
-	background: rgba(200,56,90, 1);
+	background: rgb(69, 37, 143);
 	color: rgba(237, 237, 237, 1);
 	}
 .cl-37 {
-	background: rgba(205,74,74, 1);
+	background: rgb(146, 47, 47);
 	color: rgba(237, 237, 237, 1);
 	}
 .cl-38 {
-	background: rgba(188,93,88, 1);
+	background: rgb(88, 120, 188);
 	color: rgba(237, 237, 237, 1);
 	}
 .cl-39 {
-	background: rgba(253,94,83, 1);
+	background: rgb(32, 83, 30);
 	color: rgba(237, 237, 237, 1);
 	}
 

@@ -1,5 +1,9 @@
-function prepQuote() {
-	var ppl = q_data.people;
+function prepMovies() {
+	//var mov = m_data.people;
+	
+	console.log(m_data);
+	
+	/*
 	var n = (floor(random(ppl.length)));
 	var ar = select('.intro_quote');
 	var qu = createElement('h1', ppl[n].quote);
@@ -8,4 +12,7 @@ function prepQuote() {
 	ar.child(na);
 	var x = (floor(random(39)));
 	ar.addClass('cl-' + x);
+	*/
+
+
 }

@@ -1,6 +1,12 @@
-var url = 'https://rawgit.com/cataliniimolnar/json_data/master/qts.json';
-var data;
+//quotes
+var q_url = 'https://rawgit.com/cataliniimolnar/json_data/master/qts.json';
+var q_data;
 
+//movies
+var m_url = 'https://cdn.rawgit.com/cataliniimolnar/json_data/master/mdb.json';
+var m_data;
+
+// snow
 let snow = [];
 let gravity;
 
@@ -10,7 +16,9 @@ let spritesheet;
 let textures = [];
 
 function preload(){
-    data = loadJSON(url);
+    q_data = loadJSON(q_url);   // quotes
+    m_data = loadJSON(m_url);   // movies
+
     spritesheet = loadImage('media/f32.png');
 }
 
@@ -34,6 +42,7 @@ function setup(){
         snow.push(new SnowFlake(x, y, design));
     }
     
+    //prepare quote
     prepQuote();
     
 }
