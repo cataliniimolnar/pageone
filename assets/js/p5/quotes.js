@@ -8,4 +8,7 @@ function prepQuote() {
 	ar.child(na);
 	var x = (floor(random(39)));
 	ar.addClass('cl-' + x);
+
+	var m_head = select('.movies_header');
+	m_head.addClass('cl-' + x);
 }
