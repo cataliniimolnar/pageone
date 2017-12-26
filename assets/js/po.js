@@ -1,11 +1,14 @@
 $(document).ready(function(){
-	$('.intro').addClass('show');
+	bodyFadeIn();
 	
 
 
 });
 
-
+function bodyFadeIn() {
+	$('body').animate({opacity: 1}, 500);
+	$('.intro').addClass('show');
+	}
 function Movies(){
 	$('section').removeClass('show');
 	$('.movies').addClass('show');

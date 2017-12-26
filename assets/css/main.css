@@ -4,6 +4,9 @@ html, body {
 	min-height: 100vh;
 	background: rgba(34, 34, 34, 1); 
 	}
+body {
+	opacity: 0;
+	}
 
 canvas {
 	position: fixed;
