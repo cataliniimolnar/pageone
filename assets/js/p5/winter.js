@@ -20,6 +20,8 @@ function preload(){
     m_data = loadJSON(m_url);   // movies
 
     spritesheet = loadImage('media/f32.png');
+    //spritesheet = loadImage('https://alca.tv/static/f32.png');
+
 }
 
 
