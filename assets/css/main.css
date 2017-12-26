@@ -120,13 +120,30 @@ button:hover {
 	height: 440px;
 	margin: 12px 12px 0 0;
 	overflow: hidden;
+	border-radius: 6px;
 	background: rgba(65, 74, 76, 0.9);
+	z-index: 3;
 	}
 .movie img {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: auto;
+	z-index: 4;
 	}
-
+.movie .movie_btn {
+	position: absolute;
+	bottom: 10%;
+	left: 36%;
+	color: rgba(129, 15, 15, 0.4);
+	z-index: 5;
+	transition: all 0.2 linear;
+	}
+.movie:hover .movie_btn {
+	color: rgba(129, 15, 15, 0.90);
+	}
+.movie .movie_trailer { display: none; }
 
 
 .intro_quote {
@@ -153,6 +170,27 @@ button:hover {
 
 
 
+.trailer {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.80);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	}
+.trailer .trframe {
+	width: 75vw;
+	height: 60vh;
+	border: none;
+	box-shadow: 0px 0px 20px 0px rgba(237, 237, 237, 0.3);
+	}
+
+.off { display: none; }
 
 
 
@@ -172,10 +210,13 @@ button:hover {
 
 
 
-
-
-
-
+@media screen and (max-width: 640px) {
+	.movies_section {
+		
+		}
+	.intro_quote { 
+		border-radius: 0; }
+		}
 
 
 
@@ -270,19 +311,19 @@ button:hover {
 	color: rgba(35, 35, 35, 1);
 	}
 .cl-22 {
-	background: rgb(61, 25, 41, 0.8);
-	color: rgb(253, 241, 241);
+	background: rgba(61, 25, 41, 0.8);
+	color: rgba(255, 255, 255, 1);
 	}
 .cl-23 {
-	background: rgb(71, 0, 32, 0.8);
-	color: rgb(247, 236, 236);
+	background: rgba(71, 0, 32, 0.8);
+	color: rgba(255, 255, 255, 1);
 	}
 .cl-24 {
-	background: rgb(134, 50, 2, 0.8);
-	color: rgb(255, 255, 255);
+	background: rgba(134, 50, 2, 0.8);
+	color: rgba(255, 255, 255, 1);
 	}
 .cl-25 {
-	background: rgb(252, 130, 64, 0.8);
+	background: rgba(252, 130, 64, 0.8);
 	color: rgba(35, 35, 35, 1);
 	}
 .cl-26 {
@@ -314,47 +355,30 @@ button:hover {
 	color: rgba(237, 237, 237, 1);
 	}
 .cl-33 {
-	background: rgb(85, 48, 67, 0.8);
+	background: rgba(85, 48, 67, 0.8);
 	color: rgba(237, 237, 237, 1);
 	}
 .cl-34 {
-	background: rgb(100, 48, 112, 0.8);
+	background: rgba(100, 48, 112, 0.8);
 	color: rgba(237, 237, 237, 1);
 	}
 .cl-35 {
-	background: rgb(75, 31, 57, 0.8);
+	background: rgba(75, 31, 57, 0.8);
 	color: rgba(237, 237, 237, 1);
 	}
 .cl-36 {
-	background: rgb(69, 37, 143, 0.8);
+	background: rgba(69, 37, 143, 0.8);
 	color: rgba(237, 237, 237, 1);
 	}
 .cl-37 {
-	background: rgb(146, 47, 47, 0.8);
+	background: rgba(146, 47, 47, 0.8);
 	color: rgba(237, 237, 237, 1);
 	}
 .cl-38 {
-	background: rgb(88, 120, 188, 0.8);
+	background: rgba(88, 120, 188, 0.8);
 	color: rgba(237, 237, 237, 1);
 	}
 .cl-39 {
-	background: rgb(32, 83, 30, 0.8);
+	background: rgba(32, 83, 30, 0.8);
 	color: rgba(237, 237, 237, 1);
 	}
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 640px) {
-	.movies_section {
-		flex-direction: row;
-		}
-	.intro_quote { 
-		border-radius: 0; }
-		}

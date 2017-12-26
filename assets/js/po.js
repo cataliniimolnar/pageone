@@ -1,12 +1,16 @@
 $(document).ready(function(){
-	bodyFadeIn();
+	closeTrailer();
 	
-
-
 });
 
+function closeTrailer() {
+	$('.trailer').click(function(){
+		$('.trframe').remove();
+		$('.trailer').addClass('off');
+	});
+	}
 function bodyFadeIn() {
-	$('body').animate({opacity: 1}, 500);
+	$('body').animate({opacity: 1}, 1500);
 	$('.intro').addClass('show');
 	}
 function Movies(){

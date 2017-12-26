@@ -1,8 +1,8 @@
-//quotes
+// quotes
 var q_url = 'https://rawgit.com/cataliniimolnar/json_data/master/qts.json';
 var q_data;
 
-//movies
+// movies
 var m_url = 'https://rawgit.com/cataliniimolnar/json_data/master/mdb.json';
 var m_data;
 
@@ -15,17 +15,35 @@ let zOff = 0;
 let spritesheet;
 let textures = [];
 
+var r1 = false;
+var r2 = false;
+var r3 = false;
+
 function preload(){
-    q_data = loadJSON(q_url);   // quotes
-    m_data = loadJSON(m_url);   // movies
-
-    spritesheet = loadImage('media/f32.png');
-    //spritesheet = loadImage('https://alca.tv/static/f32.png');
-
+    // quotes
+    q_data = loadJSON(q_url, quotesReady);
+    // movies
+    m_data = loadJSON(m_url, moviesReady);
+    // snowflakes spritesheet
+    spritesheet = loadImage('media/f32.png, spritesReady');
+    //spritesheet = loadImage('https://alca.tv/static/f32.png', spritesReady);
 }
+
+function quotesReady(){
+    r1 = true;
+    }
+function moviesReady(){
+    r2 = true;
+    }
+function spritesReady(){
+    r3 = true;
+    }
 
 
 function setup(){
+    
+    if (r1 && r2 && r3) {
+    
     createCanvas(windowWidth, windowHeight);
     gravity = createVector(0, 0.03);
     for (let x = 0; x < spritesheet.width; x+=32) {
@@ -36,7 +54,14 @@ function setup(){
         }
     }
     
-    let xr = random(450, 600);
+    let xr = 0;
+    if (windowWidth < 640) {
+        xr = floor(random(150, 250));
+    } else {
+        xr = floor(random(400, 550));
+    }
+    console.log(windowWidth + " " + xr);
+
     for (let i = 0; i < xr; i++) {
         let x = random(width);
         let y = random(height);
@@ -44,9 +69,14 @@ function setup(){
         snow.push(new SnowFlake(x, y, design));
     }
     
-    //prepare quote
+    // prep quote
     prepQuote();
+    // prep movie
     prepMovies();
+
+    }
+
+    bodyFadeIn();
 }
 
 
