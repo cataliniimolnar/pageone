@@ -57,17 +57,12 @@ main {
 	}
 
 button {
-	background: rgba(0, 0, 0, 0); 
 	border: none; 
 	padding: 0.4em; 
-	color: rgba(240, 240, 240, 1);
 	cursor: pointer;
 	}
 button:hover {
-	background: rgba(0, 0, 0, 0); 
-	border: none; 
-	padding: 0.4em; 
-	color: rgba(240, 240, 240, 0.5);
+	color: rgba(3, 129, 247, 0.527);
 	}
 
 
@@ -349,6 +344,7 @@ button:hover {
 
 
 @media screen and (max-width: 640px) {
+	
 	.intro_quote { 
 		border-radius: 0; }
 		}

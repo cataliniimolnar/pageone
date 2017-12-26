@@ -9,6 +9,6 @@ function prepQuote() {
 	var x = (floor(random(39)));
 	ar.addClass('cl-' + x);
 
-	var m_head = select('.movies_header');
-	m_head.addClass('cl-' + x);
+	var m_btn = select('#home_btn');
+	m_btn.addClass('cl-' + x);
 }
