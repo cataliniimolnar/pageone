@@ -46,21 +46,21 @@ main {
 .movies {
 	transform: translate3d(-100%, 0, 0);
 	transition: transform 0.5s ease-in-out;
-	background: rgba(65, 74, 76, 1);
+	background: rgba(65, 74, 76, 0.9);
 	}
 .show {
 	transform: translate3d(0, 0, 0);
 	transition: transform 0.5s ease-in-out;
 	}
 
-.intro button {
+button {
 	background: rgba(0, 0, 0, 0); 
 	border: none; 
 	padding: 0.4em; 
 	color: rgba(240, 240, 240, 1);
 	cursor: pointer;
 	}
-.intro button:hover {
+button:hover {
 	background: rgba(0, 0, 0, 0); 
 	border: none; 
 	padding: 0.4em; 
