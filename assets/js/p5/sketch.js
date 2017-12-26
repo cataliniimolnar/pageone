@@ -49,3 +49,8 @@ function draw(){
         flake.render();
     }
 }
+
+
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
