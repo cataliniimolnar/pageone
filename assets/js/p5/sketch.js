@@ -7,7 +7,7 @@ let spritesheet;
 let textures = [];
 
 function preload(){
-    spritesheet = loadImage('https://alca.tv/static/f32.png');
+    spritesheet = loadImage('media/f32.png');
 }
 
 
