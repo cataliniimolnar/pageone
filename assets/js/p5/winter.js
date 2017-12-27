@@ -21,13 +21,15 @@ var r1 = false;
 var r2 = false;
 var r3 = false;
 
+var c1;
+
 function preload(){
     // quotes
     q_data = loadJSON(q_url, quotesReady);
     // movies
     m_data = loadJSON(m_url, moviesReady);
     // snowflakes spritesheet
-    spritesheet = loadImage('media/f32.png', spritesReady);
+     spritesheet = loadImage('media/f32.png', spritesReady);
     //spritesheet = loadImage('https://alca.tv/static/f32.png', spritesReady);
 }
 
@@ -47,7 +49,8 @@ function setup(){
     
     if (r1 && r2 && r3) {
     
-    createCanvas(windowWidth, windowHeight);
+    c1 = createCanvas(windowWidth, windowHeight);
+    c1.addClass('maincanvas');
     gravity = createVector(0, 0.03);
     for (let x = 0; x < spritesheet.width; x+=32) {
         for (let y = 0; y < spritesheet.height; y+=32) {
