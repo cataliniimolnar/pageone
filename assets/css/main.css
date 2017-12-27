@@ -264,7 +264,7 @@ button:hover {
 
 
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 840px) {
 	h1 { font-size: 1.4em; }
 	h3 { font-size: 1em; }
 	}
