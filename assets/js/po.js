@@ -10,8 +10,10 @@ function closeTrailer() {
 	});
 	}
 function bodyFadeIn() {
-	$('body').animate({opacity: 1}, 1500);
+	$('main').animate({opacity: 1}, 1500);
+	$('canvas').animate({opacity: 1}, 2500);
 	$('.intro').addClass('show');
+	$('.spinner').remove();
 	}
 function Movies(){
 	$('section').removeClass('show');
