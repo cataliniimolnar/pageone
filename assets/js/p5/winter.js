@@ -29,8 +29,8 @@ function preload(){
     // movies
     m_data = loadJSON(m_url, moviesReady);
     // snowflakes spritesheet
-    // spritesheet = loadImage('media/f32.png', spritesReady);
-    spritesheet = loadImage('https://alca.tv/static/f32.png', spritesReady);
+    spritesheet = loadImage('media/f32.png', spritesReady);
+    //spritesheet = loadImage('https://alca.tv/static/f32.png', spritesReady);
 }
 
 function quotesReady(){
