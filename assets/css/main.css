@@ -137,12 +137,13 @@ button:hover {
 	position: absolute;
 	bottom: 10%;
 	left: 36%;
-	color: rgba(129, 15, 15, 0.4);
+	color: rgba(194, 22, 22, 0.4);
 	z-index: 5;
-	transition: all 0.2 linear;
+	transition: color 0.15s linear;
 	}
+
 .movie:hover .movie_btn {
-	color: rgba(129, 15, 15, 0.90);
+	color: rgba(194, 22, 22, 0.9);
 	}
 .movie .movie_trailer { display: none; }
 
@@ -258,7 +259,10 @@ button:hover {
 		border-radius: 0; }
 		}
 
-
+@media screen and (max-width: 760px) {
+	h1 { font-size: 1.4em; }
+	h3 { font-size: 1em; }
+	}
 
 
 

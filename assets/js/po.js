@@ -3,6 +3,7 @@ $(document).ready(function(){
 	
 });
 
+
 function closeTrailer() {
 	$('.trailer').click(function(){
 		$('.trframe').remove();

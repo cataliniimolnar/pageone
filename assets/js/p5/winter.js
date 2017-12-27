@@ -1,3 +1,5 @@
+var isMobile = /iPhone|iPad|iPod|Android|BlackBerry|IEMobile/i.test(navigator.userAgent);
+
 // quotes
 var q_url = 'https://rawgit.com/cataliniimolnar/json_data/master/qts.json';
 var q_data;
@@ -41,6 +43,7 @@ function spritesReady(){
 
 
 function setup(){
+
     
     if (r1 && r2 && r3) {
     
@@ -55,12 +58,12 @@ function setup(){
     }
     
     let xr = 0;
-    if (windowWidth < 640) {
-        xr = floor(random(150, 250));
+    if (isMobile) {
+        xr = floor(random(100, 200));
     } else {
-        xr = floor(random(400, 550));
+        xr = floor(random(350, 500));
     }
-
+    
     for (let i = 0; i < xr; i++) {
         let x = random(width);
         let y = random(height);
@@ -72,10 +75,9 @@ function setup(){
     prepQuote();
     // prep movie
     prepMovies();
-
-    }
-
+    // main fade in..
     bodyFadeIn();
+    }
 }
 
 
