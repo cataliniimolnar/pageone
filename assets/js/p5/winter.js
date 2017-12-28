@@ -29,8 +29,8 @@ function preload(){
     // movies
     m_data = loadJSON(m_url, moviesReady);
     // snowflakes spritesheet
-    spritesheet = loadImage('media/f32.png', spritesReady);
-    //spritesheet = loadImage('https://alca.tv/static/f32.png', spritesReady);
+    //spritesheet = loadImage('media/f32.png', spritesReady);
+    spritesheet = loadImage('https://alca.tv/static/f32.png', spritesReady);
 }
 
 function quotesReady(){
@@ -45,42 +45,38 @@ function spritesReady(){
 
 
 function setup(){
-
-    
-    if (r1 && r2 && r3) {
-    
-    c1 = createCanvas(windowWidth, windowHeight);
-    c1.addClass('maincanvas');
-    gravity = createVector(0, 0.03);
-    for (let x = 0; x < spritesheet.width; x+=32) {
-        for (let y = 0; y < spritesheet.height; y+=32) {
-            let img = spritesheet.get(x, y, 32, 32);
-            textures.push(img);
-            image(img, x, y);
+    if (r1) {
+        prepQuote();
+    }
+    if (r2) {
+        prepMovies();
+    }
+    if (r3) {
+        c1 = createCanvas(windowWidth, windowHeight).addClass('maincanvas');
+        gravity = createVector(0, 0.03);
+        for (let x = 0; x < spritesheet.width; x+=32) {
+            for (let y = 0; y < spritesheet.height; y+=32) {
+                let img = spritesheet.get(x, y, 32, 32);
+                textures.push(img);
+                image(img, x, y);
+            }
         }
+        let xr = 0;
+        if (isMobile) {
+            xr = floor(random(100, 200));
+        } else {
+            xr = floor(random(350, 500));
+        }
+        for (let i = 0; i < xr; i++) {
+            let x = random(width);
+            let y = random(height);
+            let design = random(textures);
+            snow.push(new SnowFlake(x, y, design));
+        }
+        mainCanvasFadeIn();
     }
     
-    let xr = 0;
-    if (isMobile) {
-        xr = floor(random(100, 200));
-    } else {
-        xr = floor(random(350, 500));
-    }
     
-    for (let i = 0; i < xr; i++) {
-        let x = random(width);
-        let y = random(height);
-        let design = random(textures);
-        snow.push(new SnowFlake(x, y, design));
-    }
-    
-    // prep quote
-    prepQuote();
-    // prep movie
-    prepMovies();
-    // main fade in..
-    bodyFadeIn();
-    }
 }
 
 
