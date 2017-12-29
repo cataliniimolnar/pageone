@@ -8,7 +8,7 @@ let xr = 0;
 function prepWinter() {
     if (spritesheetLoaded) { 
         if (isMobile) {
-            xr = floor(random(750, 150));
+            xr = floor(random(75, 150));
         } else 
         {
             xr = floor(random(200, 300));
