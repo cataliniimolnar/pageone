@@ -160,11 +160,12 @@ section {
 	left: 0;
 	transform: translate3d(-180%, 75%, 0);
 	}
-.quote h3, .quote small { color: rgba(250, 250, 250, 1); }
+.quote h3, .quote small { color: rgba(250, 250, 250, 1);  }
 .quote small { font-size: 1em; }
 .q_show {
 	transform: translate3d(5%, 5%, 0);
 	z-index: 9;
+	filter: blur(0.000001px);
 	transition: all 0.2s linear;
 	}
 
