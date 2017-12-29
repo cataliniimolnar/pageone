@@ -17,12 +17,20 @@ h2,
 h3 { 
 	font-family: 'Scope One', Verdana, Geneva, Tahoma, sans-serif; 
 	font-weight: 500;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
 	}
 h2, h3 { letter-spacing: 1px; }
 p { 
 	font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 1.2em; 
 	text-decoration: none; 
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	}
+small {
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
 	}
 a, a:focus, a:active { 
 	font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
@@ -165,7 +173,6 @@ section {
 .q_show {
 	transform: translate3d(5%, 5%, 0);
 	z-index: 9;
-	filter: blur(0.000001px);
 	transition: all 0.2s linear;
 	}
 
@@ -206,7 +213,7 @@ section {
 	}
 .movie .movie_btn > svg > path {
 	fill: rgba(194, 22, 22, 0.4);
-	transition: color 0.15s linear;
+	transition: all 0.15s linear;
 	}
 .movie:hover .movie_btn > svg > path {
 	fill: rgba(194, 22, 22, 0.9);
@@ -272,8 +279,19 @@ section {
 
 
 
+::-webkit-scrollbar {
+	width: 12px;
+	}
 
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(250, 250, 250, 0.3); 
+	border-radius: 10px;
+	}
 
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(250, 250, 250, 0.5); 
+	}
 
 
 
