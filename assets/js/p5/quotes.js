@@ -1,12 +1,10 @@
 function prepQuote() {
 	var ppl = q_data.people;
 	var n = (floor(random(ppl.length)));
-	var x = (floor(random(39)));
-	
-	var ar = select('.intro_quote');
-	ar.addClass('cl-' + x);
-	var qu = createElement('h1', ppl[n].quote).parent(ar);
-	var na = createElement('h3', ppl[n].name).parent(ar);
-
-	quoteFadeIn();
-}
+	var body = select('body');
+	var d = createElement('div').addClass('quote').parent(body);
+	var d_q = createElement('h3', ppl[n].quote).parent(d);
+	var d_n = createElement('small', ppl[n].name).parent(d);
+		
+	showHideQuote();
+	}

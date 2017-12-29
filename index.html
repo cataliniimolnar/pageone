@@ -4,17 +4,19 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-<meta property="og:title" content="C.M. - Page One" />
+<meta property="og:title" content="Page One by Cata M." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cataliniimolnar.github.io/pageone/" />
 <meta property="og:image" content="" />
 <meta property="og:description" content="..." /> 
-<title>C.M. - Page One</title>
-<link rel="shortcut icon" href="assets/cm.ico" type="image/x-icon">
-<link rel="icon" href="assets/cm.ico" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+<title>Page One by Cata M.</title>
+<link rel="shortcut icon" href="assets/p1.ico" type="image/x-icon">
+<link rel="icon" href="assets/p1.ico" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css?family=Lato|Scope+One" rel="stylesheet">
-
+<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111622095-1"></script>
 <script>
@@ -23,53 +25,67 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'UA-111622095-1');
 </script>
+
 </head>
 <body>
 
-<div class="spinner">
-    <div class="bounce1"></div>
-    <div class="bounce2"></div>
-    <div class="bounce3"></div>
-</div>
-
 <main>
-    
-    <section class="intro show">
-        <div class="intro_quote"></div>
-		<div class="intro_btns">
-			<button id="mov_btn" title="Random Movie Titles" onclick="Movies()"><i class="fas fa-film fa-3x"></i></button>
-			<button id="games_btn" title="Games" onclick="Games()"><i class="fas fa-gamepad fa-3x"></i></button>
-		</div>
-	</section>
-
-
-    <section class="movies">
-        <div class="movies_content">
-            <div class="movies_header">
-                <button id="loadm_btn" title="Load More Titles" onclick="prepMovies()"><i class="fas fa-random fa-2x"></i></button>
-                <button id="home_btn" title="Home" onclick="Home()"><i class="fas fa-home fa-2x"></i></button>                
+    <section>
+        <div class="section home">
+            <div class="home_btns">
+                <button id="btn_movies" title="Movies" onclick="showMovies()"><i class="fas fa-film fa-3x"></i></button>
+                <button id="btn_games" title="Games" onclick="showGames()"><i class="fas fa-gamepad fa-3x"></i></button>
+                <button id="btn_contact" title="Contact" onclick="showContact()"><i class="far fa-envelope fa-3x"></i></button>
             </div>
-            <div class="movies_section"></div>
         </div>
-    </section>
+        <div class="section movies">
+            <div class="header">
+                <button title="Home" onclick="showHome()"><i class="fas fa-home fa-2x"></i></button>
+                <button title="Show More Titles" onclick="prepMovies()"><i class="fas fa-random fa-2x"></i></button>
+            </div>
+            <div class="content" id="movies_section">
+                
+            </div>
+        </div>
+        <div class="section games">
+            <div class="header">
+                <button title="Home" onclick="showHome()"><i class="fas fa-home fa-2x"></i></button>
+            </div>
+            <div class="content">
+                <a class="project" href="https://cataliniimolnar.github.io/pageone/angryballs/">
+                    <img class="project__image" src="media/ab.jpg" alt="Angry Balls"/>
+                    <h2 class="project__title">Angry Balls</h2>
+                </a>
+                
+                
 
 
+            </div>
+        </div>
+        <div class="section contact">
+            <div class="header">
+                <button title="Home" onclick="showHome()"><i class="fas fa-home fa-2x"></i></button>
+            </div>
+            <div class="content">
+                <div class="info">
+                    <p>Contact: </p>
+                    <a href="mailto:cataliniimolnar@gmail.com?Subject=Hello%20Cata...">E-Mail</a><br />
+                    <a href="https://twitter.com/cataliniim" target="_blank">Twitter</a><br />
+                    <a href="https://www.minds.com/catalinmolnar" target="_blank">Minds</a><br />
+                </div>
+            </div>
+        </div>
 </main>
-
-
-
-
-
-
 <div class="trailer off"></div>
-<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="assets/fa/js/fontawesome-all.js"></script>
-<script type="text/javascript" src="assets/js/p5/p5.min.js"></script>
-<script type="text/javascript" src="assets/js/p5/p5.dom.min.js"></script>
-<script type="text/javascript" src="assets/js/p5/snowflake.js"></script>
-<script type="text/javascript" src="assets/js/p5/winter.js"></script>
-<script type="text/javascript" src="assets/js/p5/quotes.js"></script>
-<script type="text/javascript" src="assets/js/p5/movies.js"></script>
-<script type="text/javascript" src="assets/js/po.js"></script>
+<script type="text/javascript" src="assets/js/jquery.min.js" defer></script>
+<script type="text/javascript" src="assets/fa/js/fontawesome-all.js" defer></script>
+<script type="text/javascript" src="assets/js/po.js" defer></script>
+<script type="text/javascript" src="assets/js/p5/p5.min.js" defer></script>
+<script type="text/javascript" src="assets/js/p5/p5.dom.min.js" defer></script>
+<script type="text/javascript" src="assets/js/p5/snowflake.js" defer></script>
+<script type="text/javascript" src="assets/js/p5/winter.js" defer></script>
+<script type="text/javascript" src="assets/js/p5/quotes.js" defer></script>
+<script type="text/javascript" src="assets/js/p5/movies.js" defer></script>
+<script type="text/javascript" src="assets/js/p5/main.js" defer></script>
 </body>
 </html>

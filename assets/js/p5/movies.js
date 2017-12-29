@@ -2,7 +2,7 @@ function prepMovies() {
 	var mov = m_data.movies;
 	for (var i = 0; i < 3; i++) {
 		var n = (floor(random(mov.length)));
-		var mov_a = select('.movies_section');
+		var mov_a = select('#movies_section');
 		var mov_b = createElement('article').addClass('movie').parent(mov_a);
 		var mov_i = createImg(mov[n].poster, mov[n].title).parent(mov_b);
 		var mov_c = createButton('').addClass('movie_btn').parent(mov_b).mousePressed(playTrailer);
