@@ -14,19 +14,15 @@ let spritesheet;
 var spritesheetLoaded = false;
 
 function preload(){
-// quotes
     q_data = loadJSON(q_url, quotesReady);
-// movies
     m_data = loadJSON(m_url, moviesReady);
-// snowflakes spritesheet
-    spritesheet = loadImage('media/f32.png', spritesReady);
-    // spritesheet = loadImage('https://alca.tv/static/f32.png', spritesReady);
+    //spritesheet = loadImage('media/f32.png', spritesReady);
+    spritesheet = loadImage('https://alca.tv/static/f32.png', spritesReady);
 }
 
-function quotesReady(){ quotesLoaded = true; }
-function moviesReady(){ moviesLoaded = true; }
-function spritesReady(){ spritesheetLoaded = true; }
-
+function quotesReady(quotes){ if (quotes) {quotesLoaded = true;} }
+function moviesReady(movies){ if (movies) {moviesLoaded = true;} }
+function spritesReady(sprites){ if (sprites) {spritesheetLoaded = true;} }
 
 function setup(){
     mc = createCanvas(windowWidth, windowHeight).addClass('maincanvas');
