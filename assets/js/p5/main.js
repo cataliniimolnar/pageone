@@ -17,7 +17,7 @@ function preload(){
     q_data = loadJSON(q_url, quotesReady);
     m_data = loadJSON(m_url, moviesReady);
     spritesheet = loadImage('media/f32.png', spritesReady);
-    //spritesheet = loadImage('https://alca.tv/static/f32.png', spritesReady);
+    //spritesheet = loadImage('https://cataliniimolnar.github.io/pageone/media/f32.png', spritesReady);
 }
 
 function quotesReady(quotes){ if (quotes) {quotesLoaded = true;} }
