@@ -255,6 +255,21 @@ section {
 	transform: translate3d(0, 20px, 0);
 	}
 
+.p__subtitle {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 1em;
+	color: rgba(34, 34, 34, 1);
+	font-size: 1em;
+	line-height: 1;
+	opacity: 0;
+	transition: transform 0.3s, opacity 0.3s;
+	}
+.project:hover .p__subtitle {
+	opacity: 0.8;
+	}
+
 .info {
 	padding: 1em;
 	text-align: center;
