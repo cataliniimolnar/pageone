@@ -227,7 +227,7 @@ section {
 	outline: none;
 	margin: 8px 8px 0 0;
 	}
-.project:last-of-type { margin: 0 0 0 0; }
+.project:last-of-type { margin: 8px 0 0 0; }
 .project__image {
 	position: absolute;
 	top: 0;
@@ -269,6 +269,8 @@ section {
 .project:hover .p__subtitle {
 	opacity: 0.8;
 	}
+
+.itt { color: rgba(250, 250, 250, 1); }
 
 .info {
 	padding: 1em;
